@@ -1,3 +1,4 @@
+"""Matrix plot for model selection results."""
 from ..result import ModelSelectionResult
 import matplotlib.pyplot as plt
 import numpy as np
@@ -5,6 +6,14 @@ from itertools import product
 
 
 def matrix_plot(result: ModelSelectionResult):
+    """
+    Matrix Plot visualization for model selection results.
+    
+    
+    Parameters:
+    result: ModelSelectionResult
+        Model selection result object.
+    """
     # For all models, compute the column, and set the matrix entry to the criterion/None.
     # => run matshow from matplotlib
 

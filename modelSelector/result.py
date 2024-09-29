@@ -10,6 +10,7 @@ class ModelSelectionResult(dict):
     The model ids are strings, that start with `M_` and contain only the characters 0 and 1 after that.
     Here a 0 indicates, that a parameter is not included in the model, and a 1 indicates, that it is included.
     """
+    
     def __copy__(self):
         """Copy the object."""
         other = self.__class__()

@@ -1,3 +1,4 @@
+"""Utility functions for model selection."""
 from ..criterion import CriterionBase, AIC, AIC_c, BIC, Mallows_Cp
 from ..result import ModelSelectionResult
 import numpy as np

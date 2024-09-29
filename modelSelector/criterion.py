@@ -1,6 +1,4 @@
-"""
-Implements all supported criteria.
-"""
+"""Implements all supported criteria."""
 from abc import ABC, abstractmethod
 from .model import ModelBase, LinearRegressionModel
 import numpy as np
@@ -69,7 +67,7 @@ class AIC_c(CriterionBase):
             raise RuntimeError("The number of data points is not stored. "
                                "This information is needed to compute the AIC_C")
         return 2 * model.nll + 2 * model.n_params + \
-               2 * (model.n_params**2 + model.n_params)/(model.n_data - model.n_params - 1)
+            2 * (model.n_params**2 + model.n_params)/(model.n_data - model.n_params - 1)
 
 
 class BIC(CriterionBase):
@@ -100,12 +98,13 @@ class Mallows_Cp(CriterionBase):
     """
     Compute Mallows Cp, which is only supported for linear models.
 
-
     Cp = RSS(model_reduced)/RSS(model_full) - n_data + 2*(n_params_reduced-1)
     """
 
     def __init__(self, model_full: ModelBase):
         """
+        Constructor for Mallows Cp.
+
         Parameters:
         model_full: ModelBase
             The full model.
