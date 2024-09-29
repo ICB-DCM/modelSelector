@@ -103,7 +103,7 @@ class Mallows_Cp(CriterionBase):
 
     def __init__(self, model_full: ModelBase):
         """
-        Constructor for Mallows Cp.
+        Initialize the Mallows Cp Criterion.
 
         Parameters:
         model_full: ModelBase
