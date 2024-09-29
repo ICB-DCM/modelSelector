@@ -1,7 +1,6 @@
-<img src="modelSelectorLogo.png" width="50%" alt="modelSelector Logo"/>
+<img src="modelSelectorLogo.png" width="75%" alt="modelSelector Logo"/>
 
-
-# modelSelector: Efficient Criterion Based Model Selection in Python
+# modelSelector: Fast and exhaustive model selection in Python
 
 The `modelSelector` Package offers a variety of functions for criterion based model selection in python.
 
