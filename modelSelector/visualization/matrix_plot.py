@@ -8,8 +8,7 @@ from itertools import product
 def matrix_plot(result: ModelSelectionResult):
     """
     Matrix Plot visualization for model selection results.
-    
-    
+
     Parameters:
     result: ModelSelectionResult
         Model selection result object.
