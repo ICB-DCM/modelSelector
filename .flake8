@@ -1,0 +1,25 @@
+########################
+# Flake8 Configuration #
+########################
+
+[flake8]
+
+extend-ignore =
+  # White space before :
+  E203
+  # Don't be crazy if line too long
+  E501
+
+per-file-ignores =
+    # Imported but unused
+    */__init__.py:F401,D400,D205
+    # use asserts in tests
+    test/*:S101
+    # Missing docstring in setup.py
+    setup.py:D100
+    # D107: Missing Docstring in __init__.py
+    # D105='Missing docstring in magic method'
+    *:D105,D107
+    # Missing docstring in public (=property) method.
+    poseSelector/pose_estimation_result/pose_result_2d_base.py:D102
+    poseSelector/pose_estimation_result/blaze_pose_result_2d.py:D102
