@@ -7,6 +7,7 @@ import numpy as np
 
 @dataclass
 class ModelBase(ABC):
+    """Base class for all models."""
 
     id: str
     parameters: np.array = None
